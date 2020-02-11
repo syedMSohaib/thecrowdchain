@@ -1,43 +1,156 @@
+
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="theme-color" content="#000000" />
-    <meta
-      name="description"
-      content="Web site created using create-react-app"
-    />
-    <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
-    <!--
-      manifest.json provides metadata used when your web app is installed on a
-      user's mobile device or desktop. See https://developers.google.com/web/fundamentals/web-app-manifest/
-    -->
-    <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
-    <!--
-      Notice the use of %PUBLIC_URL% in the tags above.
-      It will be replaced with the URL of the `public` folder during the build.
-      Only files inside the `public` folder can be referenced from the HTML.
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="description" content="description"/>
+  <meta name="keywords" content="keywords"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta http-equiv="X-UA-Compatible" content="ie=edge"/>
+  <link rel="shortcut icon" href="/images/favicon.png"/>
+  <title>TheCrowdChain - Blockchain fund raising & charity platform</title>
+  <link rel="stylesheet" href="/css/styles.min.css"/>
+  <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js" type="text/javascript" async=""></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Quicksand:300,400,500,700%7CPermanent+Marker:400" media="all">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+  <style>
+    header.header{
+      background: transparent;
+      position: absolute;
+    }
+  </style>
 
-      Unlike "/favicon.ico" or "favicon.ico", "%PUBLIC_URL%/favicon.ico" will
-      work correctly both with client-side routing and a non-root public URL.
-      Learn how to configure a non-root public URL by running `npm run build`.
-    -->
-    <title>React App</title>
-  </head>
-  <body>
-    <noscript>You need to enable JavaScript to run this app.</noscript>
+</head>
+<body>
+<div class="page-wrapper">
+  <!-- header start-->
+  <header class="header header--front_2">
+    <div class="">
+      <div class="row no-gutters justify-content-between">
+        <div class="col-auto d-flex align-items-center">
+          <div class="header-logo">
+            <a class="header-logo__link" href="/">
+              <img src="/images/logo.png" alt="">
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+  <!-- header end-->
+  <main class="main">
+    <!-- promo start-->
+    <section class="promo promo--front_2">
+      <div class="promo-slider">
+        <div class="promo-slider__item promo-slider__item--style-1">
+          <picture>
+            <source srcset="/images/promo_2-2.jpg" media="(min-width: 992px)"/><img class="img--bg" src="/images/promo_2-2.jpg" alt="img"/>
+          </picture>
+          <div class="container">
+            <div class="row">
+              <div class="col-12">
+                <div class="align-container">
+                  <div class="align-container__item">
+                    <div class="promo-slider__wrapper-1">
+                      <h2 class="promo-slider__title"><span>We help all people in need</span></h2>
+                    </div>
+                    <div class="promo-slider__wrapper-2">
+                      <p class="promo-slider__subtitle">Gray eel-catfish longnose whiptail catfish smalleye squaretail queen danio unicorn fish shortnose greeneye fusilier fish silver carp nibbler sharksucker tench lookdown catfish</p>
+                    </div>
+                    <div class="promo-slider__wrapper-3"><a class="button promo-slider__button button--primary" href="#">Discover</a></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+    </section>
+    <!-- promo end-->
+    <!-- section start-->
+    <section class="section">
+      <div class="container">
+        <div class="row margin-bottom">
+          <div class="col-12">
+            <div class="heading heading--primary heading--center"><span class="heading__pre-title">What We do</span>
+              <h2 class="heading__title no-margin-bottom"><span>We do it</span> <span>for all people</span></h2>
+            </div>
+          </div>
+        </div>
+        <div class="row offset-margin">
+          <div class="col-sm-6 col-lg-3">
+            <div class="icon-item text-left text-center text-sm-left">
+              <div class="icon-item__img">
+                <svg class="icon icon-item__icon icon-item__icon--smaller color--blue">
+                  <svg viewBox="0 0 512 512" id="donation" xmlns="http://www.w3.org/2000/svg"><path d="M249.391 480.848l-5.955-81.261c-.644-8.765-8.267-15.274-16.937-14.626l-4.06.298c-1.684-16.72-4.663-33.083-8.881-48.743-5.795-21.513-11.132-28.631-35.39-58.71l-.091-.111c-9.117-10.87-16.034-13.592-63.355-40.001-10.804-6.03-20.514-4.362-27.552-.111l-.951-2.285a28.116 28.116 0 001.465-7.138l4.32-59.924c1.125-15.605-10.594-29.147-26.202-30.272-8.141-.594-15.872 2.306-21.525 7.704-17.838-13.303-50.332-.331-43.294 33.012.068.325 32.147 118.269 32.234 118.588 4.603 21.37 20.138 33.048 26.62 37.084.805.499 17.8 9.877 18.63 10.335 25.706 14.18 27.804 15.34 34.941 24.697 6.853 8.987 6.83 17.261 7.275 23.332l-3.786.278c-8.702.639-15.262 8.236-14.623 16.936l5.357 73.138c.61 8.334 7.635 14.862 15.991 14.862h109.893c9.24 0 16.551-7.865 15.876-17.082zM77.051 167.156l-2.834 39.302c-20.513-49.296-18.527-45.451-20.4-49.113 8.282-9.374 24.156-2.983 23.234 9.811zm-9.44 154.378c-11.585-7.277-16.527-15.939-19.88-28.012L15.607 175.388c-.62-3.095-2.482-16.157 9.303-19.475 6.087-1.42 10.482.561 13.937 5.552 1.548 2.237-2.11-6.058 37.249 88.526-3.5 7.964-3.862 19.859 7.323 28.337 12.099 9.172 40.842 31.136 41.131 31.357a7.455 7.455 0 004.545 1.54 7.494 7.494 0 004.557-13.45c-.289-.222-29.054-22.203-41.178-31.393-7.136-5.408-2.456-13.048 2.76-16.16 3.688-2.196 7.558-2.02 12.183.562 46.012 25.678 52.068 28.089 59.133 36.492 24.266 30.094 27.651 35.01 32.535 53.141 3.974 14.75 6.793 30.168 8.402 45.94l-71.854 5.264c-.452-6.156-.485-18.448-10.306-31.327-10.733-14.071-14.383-14.588-57.716-38.76zm166.583 161.107a.896.896 0 01-.681.297H123.62a1.048 1.048 0 01-1.042-.967l-5.357-73.138a.837.837 0 01.771-.892 4085734.798 4085734.798 0 00109.67-8.032c.201 0 .383.068.539.203.174.149.27.342.287.57l5.953 81.259a.904.904 0 01-.247.7zm233.527-336.977c-18.673-17.826-49.575-3.071-47.727 22.57l4.32 59.923a28.071 28.071 0 001.465 7.139l-.951 2.285c-7.037-4.251-16.753-5.918-27.552.111-47.382 26.436-54.259 29.154-63.356 40a9.062 9.062 0 00-.092.112c-24.257 30.081-29.593 37.197-35.388 58.709-4.219 15.66-7.197 32.023-8.881 48.743l-4.061-.298c-8.749-.623-16.298 5.91-16.935 14.626l-5.955 81.261c-.673 9.215 6.638 17.08 15.877 17.08h40.195c4.14 0 7.495-3.355 7.495-7.495s-3.355-7.495-7.495-7.495h-40.195a.896.896 0 01-.681-.297.892.892 0 01-.247-.7l5.955-81.26a.802.802 0 01.286-.57.857.857 0 01.606-.201l109.603 8.03a.835.835 0 01.77.893l-5.357 73.138c-.04.543-.498.967-1.042.967h-34.722c-4.14 0-7.495 3.355-7.495 7.495s3.355 7.495 7.495 7.495h34.722c8.356 0 15.382-6.528 15.991-14.862l5.357-73.137c.64-8.701-5.921-16.3-14.624-16.938l-3.785-.278.38-5.186a33.967 33.967 0 016.895-18.146c8.604-11.281 9.973-10.686 53.261-34.849.105-.058.208-.119.311-.183 6.481-4.036 22.016-15.714 26.62-37.084l32.133-118.17a7.51 7.51 0 00.101-.419c7.047-33.393-25.491-46.29-43.297-33.009zm-9.543 11.682c-1.619 3.165 1.656-3.891-20.4 49.113l-2.834-39.302c-.91-12.634 14.841-19.313 23.234-9.811zm38.21 18.042c-.092.338-32.155 118.224-32.228 118.565-3.207 15.173-13.7 23.763-19.776 27.58-43.332 24.172-46.983 24.688-57.714 38.758-9.536 12.505-9.786 24.25-10.306 31.327l-71.854-5.264c1.609-15.77 4.429-31.19 8.402-45.94 4.884-18.132 8.265-23.043 32.538-53.141 7.063-8.402 13.12-10.814 59.13-36.491 9.705-5.417 15.255 1.44 16.683 3.606.013.021.029.038.042.058.027.042.049.085.078.126 1.692 2.601 3.701 7.594-1.86 11.809-12.124 9.189-40.889 31.17-41.178 31.392a7.494 7.494 0 004.557 13.45 7.463 7.463 0 004.545-1.54c.289-.221 29.032-22.184 41.131-31.356 11.185-8.478 10.823-20.373 7.323-28.338 45.243-108.727 33.54-81.367 37.715-89.307 8.015-10.579 26.687-4.842 22.772 14.706zm-195.047-64.524h-20.043V90.819c0-13.93-11.332-25.262-25.262-25.262s-25.262 11.332-25.262 25.262v20.044H210.73c-13.93 0-25.263 11.332-25.263 25.262s11.333 25.262 25.263 25.262h20.044v20.045c-.001 13.93 11.331 25.262 25.261 25.262s25.262-11.332 25.262-25.262v-20.045h20.044c13.93 0 25.263-11.332 25.263-25.262s-11.334-25.261-25.263-25.261zm0 35.533h-27.538a7.494 7.494 0 00-7.495 7.495v27.54c0 5.664-4.608 10.272-10.272 10.272-5.664 0-10.272-4.608-10.272-10.272v-27.54a7.494 7.494 0 00-7.495-7.495h-27.54c-5.665 0-10.273-4.608-10.273-10.272s4.608-10.272 10.273-10.272h27.539a7.494 7.494 0 007.495-7.495V90.819c0-5.664 4.608-10.272 10.272-10.272 5.664 0 10.272 4.608 10.272 10.272v27.539a7.494 7.494 0 007.495 7.495h27.539c5.665 0 10.273 4.608 10.273 10.272 0 5.665-4.608 10.272-10.273 10.272z"></path><path d="M370.268 145.993a7.494 7.494 0 00-8.541 6.277c-7.892 51.672-53.33 90.637-105.692 90.637-58.958 0-106.923-47.965-106.923-106.923S197.077 29.06 256.035 29.06c52.295 0 97.725 38.91 105.67 90.507a7.496 7.496 0 0014.816-2.281C367.472 58.523 316.651 14.07 256.035 14.07c-67.223 0-121.913 54.691-121.913 121.914s54.691 121.913 121.913 121.913a121.867 121.867 0 0079.789-29.734c21.906-18.977 36.368-45.125 40.721-73.63a7.496 7.496 0 00-6.277-8.54z"></path></svg>
+                </svg>
+              </div>
+              <div class="icon-item__text">
+                <p class="color--blue">Medicine Help</p><span>Sharksucker sea toad candiru rocket danio tilefish stingray deepwater stingray Sacramento splittail, </span>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-6 col-lg-3">
+            <div class="icon-item text-left text-center text-sm-left">
+              <div class="icon-item__img">
+                <svg class="icon icon-item__icon icon-item__icon--smaller color--blue">
+                  <svg viewBox="0 0 511.998 511.998" id="church" xmlns="http://www.w3.org/2000/svg"><path d="M443.726 325.008l-88.417-69.347v-33.14c0-4.143-3.357-7.5-7.5-7.5s-7.5 3.357-7.5 7.5v21.374l-79.68-62.494a7.504 7.504 0 00-9.259 0l-79.68 62.494v-89.068L255.998 88.7l84.309 66.125v32.692c0 4.143 3.357 7.5 7.5 7.5s7.5-3.357 7.5-7.5V166.59l13.309 10.439a7.502 7.502 0 009.259-11.803L263.499 75.521V43.999h21.381c4.143 0 7.5-3.357 7.5-7.5s-3.357-7.5-7.5-7.5h-21.381V7.5c0-4.143-3.357-7.5-7.5-7.5a7.499 7.499 0 00-7.5 7.5v21.496h-21.381c-4.143 0-7.5 3.357-7.5 7.5s3.357 7.5 7.5 7.5h21.381V75.52l-114.375 89.706a7.5 7.5 0 009.259 11.803l13.308-10.438v89.068l-88.417 69.347a7.5 7.5 0 009.259 11.803l30.124-23.626v183.814H76.078a7.499 7.499 0 00-7.5 7.5c0 4.143 3.357 7.5 7.5 7.5H435.92c4.143 0 7.5-3.357 7.5-7.5s-3.357-7.5-7.5-7.5h-31.576V313.185l30.124 23.626a7.502 7.502 0 0010.531-1.272 7.502 7.502 0 00-1.273-10.531zM248.498 496.999h-43.629V378.22c0-18.035 14.673-32.708 32.708-32.708h10.921v151.487zm140.845-.001h-67.214v-67.13c0-4.143-3.357-7.5-7.5-7.5s-7.5 3.357-7.5 7.5v67.131H263.5V345.511h10.921c18.035 0 32.708 14.673 32.708 32.709v16.646c0 4.143 3.357 7.5 7.5 7.5s7.5-3.357 7.5-7.5V378.22c0-26.308-21.401-47.71-47.709-47.71h-36.842c-26.31 0-47.709 21.405-47.709 47.71v118.778h-67.214V301.419l133.344-104.584 133.344 104.584v195.579z"></path><path d="M270.885 121.611h-29.773c-4.143 0-7.5 3.357-7.5 7.5s3.357 7.5 7.5 7.5h29.773c4.143 0 7.5-3.357 7.5-7.5s-3.356-7.5-7.5-7.5zm0 27.814h-29.773a7.499 7.499 0 00-7.5 7.5c0 4.143 3.357 7.5 7.5 7.5h29.773c4.143 0 7.5-3.357 7.5-7.5a7.498 7.498 0 00-7.5-7.5zm0 111.651h-29.773a7.499 7.499 0 00-7.5 7.5c0 4.143 3.357 7.5 7.5 7.5h29.773c4.143 0 7.5-3.357 7.5-7.5a7.498 7.498 0 00-7.5-7.5zm0 27.812h-29.773a7.499 7.499 0 00-7.5 7.5c0 4.143 3.357 7.5 7.5 7.5h29.773c4.143 0 7.5-3.357 7.5-7.5a7.498 7.498 0 00-7.5-7.5z"></path></svg>                </svg>
+              </div>
+              <div class="icon-item__text">
+                <p class="color--blue">We Build and Create</p><span>Canthigaster rostrata. Midshipman dartfish Modoc sucker, yellowtail kingfish basslet</span>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-6 col-lg-3">
+            <div class="icon-item text-left text-center text-sm-left">
+              <div class="icon-item__img">
+                <svg class="icon icon-item__icon icon-item__icon--smaller color--blue">
+                  <svg viewBox="0 0 512 512" id="blood" xmlns="http://www.w3.org/2000/svg"><path d="M157.764 434.559c-57.058-28.643-84.583-102.22-48.983-163.75a7.5 7.5 0 00-2.735-10.249c-3.583-2.069-8.173-.85-10.249 2.736-39.956 69.06-9.481 152.18 55.237 184.67a7.501 7.501 0 106.73-13.407z"></path><path d="M469.999 392.714a7.5 7.5 0 007.501-7.501V368.89c0-6.556-5.272-11.895-11.806-11.902h-51.751v-51.804c-.008-6.481-5.348-11.753-11.902-11.753H388.67c-3.972-17.819-10.632-34.895-19.853-50.835-.083-.144-128.44-222.006-128.526-222.148-19.198-33.08-41.612-19.623-50.492-4.18-.656 1.136-128.933 222.861-130.939 226.328-66.43 114.817 10.682 257.11 138.572 268.632a7.504 7.504 0 008.144-6.798 7.501 7.501 0 00-6.798-8.144C80.996 485.676 11.359 354.653 71.845 250.107L200.31 28.057c1.009-1.745 7.094-13.281 13.563-13.078 5.398.145 10.844 8.744 13.567 13.211l128.39 221.918c7.889 13.636 13.738 28.173 17.443 43.323H334.39c-6.555 0-11.894 5.272-11.901 11.806v51.751h-51.81c-6.074.01-11.085 4.703-11.687 10.689-.04.399-.061.804-.061 1.213v67.651c0 6.555 5.272 11.894 11.806 11.901h51.752v7.257c-24.419 21.571-55.547 36.26-90.231 40.215a7.504 7.504 0 00-6.604 8.303c.47 4.116 4.202 7.076 8.303 6.603 31.259-3.565 61.771-15.303 88.531-35.736v25.163c.008 6.481 5.348 11.753 11.901 11.753h67.65c6.556 0 11.895-5.272 11.902-11.806v-51.751h51.804c6.481-.008 11.753-5.348 11.753-11.901v-16.324a7.5 7.5 0 00-7.501-7.501 7.5 7.5 0 00-7.501 7.501v13.224h-51.653c-6.564 0-11.902 5.34-11.902 11.902v51.654H337.49v-51.653c0-6.564-5.341-11.902-11.903-11.902h-51.654v-61.452h51.654c6.564 0 11.903-5.34 11.903-11.902v-51.657h61.451v51.654c0 6.564 5.34 11.902 11.902 11.902h51.654v13.224a7.503 7.503 0 007.502 7.502z"></path></svg>                </svg>
+              </div>
+              <div class="icon-item__text">
+                <p class="color--blue">Water Delivery</p><span>Sacramento splittail, Canthigaster rostrata. Midshipman dartfish Modoc sucker, yellowtail kingfish </span>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-6 col-lg-3">
+            <div class="icon-item text-left text-center text-sm-left">
+              <div class="icon-item__img">
+                <svg class="icon icon-item__icon icon-item__icon--smaller color--blue">
+                  <svg viewBox="0 0 512 512" id="charity" xmlns="http://www.w3.org/2000/svg"><path d="M511.833 310.027c-8.158-38.269-45.677-65.235-86.638-57.957 10.639-123.887-86.883-231.318-212.203-231.318h-.024l-.029.001C94.34 20.783 0 117.275 0 233.744 0 354.22 98.509 446.943 213.073 446.943c22.075 0 44.019-3.522 65.576-10.536 19.43 20.469 43.935 38.917 71.778 53.909a7.521 7.521 0 0010.189-3.057 7.521 7.521 0 00-3.057-10.189c-98.571-53.076-125.017-132.852-108.589-173.626 18.607-46.07 82.568-50.594 107.262-7.141 1.376 2.421 7.796 8.56 15.846 8.383 6.247-.146 12.028-4.11 15.077-9.002 31.133-49.96 99.33-32.402 109.965 17.481a7.518 7.518 0 008.925 5.788 7.522 7.522 0 005.788-8.926zM162.425 42.355c-22.262 20.549-37.029 50.349-46.474 79.023-18.425-5.258-35.275-12.033-49.856-20.172 26.902-29.675 60.302-49.281 96.33-58.851zM56.303 112.931c16.08 9.278 34.798 16.957 55.322 22.828-8.072 29.433-11.922 60.32-12.472 90.463H15.202c1.532-40.865 15.561-80.232 41.101-113.291zm-.207 241.746c-25.017-32.159-39.367-71.359-40.899-113.411h83.956c.546 30.053 4.257 60.998 12.401 90.484-20.583 5.894-39.35 13.606-55.458 22.927zm9.911 11.652c14.598-8.16 31.475-14.95 49.931-20.217 9.481 28.467 24.256 58.54 46.219 78.774-37.417-9.97-70.723-30.414-96.15-58.557zm139.463 64.649c-36.885-6.393-62.719-52.612-74.917-88.641 23.308-5.413 48.683-8.516 74.917-9.016v97.657zm0-112.701c-27.715.512-54.584 3.842-79.301 9.668-7.279-26.463-11.392-55.947-11.97-86.678h91.271v77.01zm0-92.055h-91.271c.548-29.094 4.286-58.741 11.97-86.678 24.718 5.825 51.588 9.156 79.301 9.667v77.011zm0-92.057c-26.236-.499-51.614-3.604-74.923-9.016 12.129-36.335 37.274-82.924 74.923-88.763v97.779zm154.421-32.959c-14.581 8.14-31.43 14.915-49.856 20.172-9.346-28.376-24.45-58.872-46.477-79.024 36.483 9.632 69.992 29.769 96.333 58.852zm-139.376-64.82c37.773 5.858 62.794 52.424 74.923 88.762-23.31 5.414-48.687 8.518-74.923 9.017V36.386zm36.814 373.798c-11.743 12.055-24.164 19.093-36.813 20.979v-97.839c3.111.06 6.226.148 9.334.282 1.616 27.908 11.689 53.506 27.479 76.578zm54.139-158.792c-41.192-4-77.628 26.35-81.513 67.17-3.144-.13-6.294-.227-9.441-.285v-77.011h91.264a386.803 386.803 0 01-.31 10.126zm-90.953-25.17v-77.011c27.714-.511 54.584-3.842 79.301-9.667 7.279 26.463 11.392 55.947 11.97 86.678h-91.271zm189.096 30.461c-23.949 10.169-34.499 30.393-35.484 31.426-1.808 1.894-2.863 2.147-5.317-.131l-.024-.021c-9.286-15.833-24.084-27.996-42.402-33.598.22-4.346.368-8.719.448-13.092h83.946a200.988 200.988 0 01-1.167 15.416zm-82.78-30.461c-.583-31.975-4.869-62.741-12.472-90.463 20.523-5.871 39.241-13.55 55.322-22.828 25.222 32.632 39.548 71.881 41.102 113.291h-83.952zm178.644 113.05c-4.098-.657-7.961 2.129-8.622 6.23-11.221 69.69-81.629 115.269-111.381 131.631a7.523 7.523 0 007.249 13.183c55.891-30.738 108.926-79.956 118.984-142.421a7.522 7.522 0 00-6.23-8.623z"></path></svg>                </svg>
+              </div>
+              <div class="icon-item__text">
+                <p class="color--blue">We Care About</p><span>Buri chimaera triplespine northern sea robin zingel lancetfish galjoen fish, catla wolffish, mosshead </span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- section end-->
+    <!-- causes start-->
     <div id="root"></div>
-    <!--
-      This HTML file is a template.
-      If you open it directly in the browser, you will see an empty page.
+    <!-- causes end-->
+  </main>
+  <!-- footer front_2 start-->
+  <footer class="footer" style="padding: 0 0 50px 0; !important;">
+    <div class="container">
+      <div class="row align-items-baseline">
+        <div class="col-md-6">
+          <p class="footer-copyright">© 2020 TheCrowdChain by Blitz Mobile Apps</p>
+        </div>
+        <div class="col-md-6">
+          <div class="footer-privacy"><a class="footer-privacy__link" href="#">Privacy Policy</a><span class="footer-privacy__divider">|</span><a class="footer-privacy__link" href="#">Term and Condision</a></div>
+        </div>
+      </div>
+    </div>
+  </footer>
 
-      You can add webfonts, meta tags, or analytics to this file.
-      The build step will place the bundled scripts into the <body> tag.
+</div>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+<script src="/js/lib.min.js"></script>
+<script src="/js/common.min.js"></script>
 
-      To begin the development, run `npm start` or `yarn start`.
-      To create a production bundle, use `npm run build` or `yarn build`.
-    -->
-  </body>
+</body>
 </html>
+
