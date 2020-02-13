@@ -1,5 +1,5 @@
 /* eslint-disable */
-import web3 from 'web3';
+import web3 from '../web3';
 
 const abi = [
     {
@@ -94,6 +94,15 @@ const abi = [
         "outputs": [],
         "payable": false,
         "stateMutability": "nonpayable",
+        "type": "function"
+    },
+    {
+        "constant": false,
+        "inputs": [],
+        "name": "contribute",
+        "outputs": [],
+        "payable": true,
+        "stateMutability": "payable",
         "type": "function"
     },
     {

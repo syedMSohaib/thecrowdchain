@@ -1,6 +1,7 @@
 /* eslint-disable */
-import web3 from 'web3';
-const address = '0x139625b2BDd0cA5a8fAC97D17879f12f6B60980F';
+import web3 from '../web3';
+
+const address = '0x515548292aA24004cB8962622a8F7E77ed075491';
 const abi = [
     {
         "anonymous": false,
@@ -46,6 +47,21 @@ const abi = [
         "type": "event"
     },
     {
+        "constant": true,
+        "inputs": [],
+        "name": "getAllCauses",
+        "outputs": [
+            {
+                "internalType": "contract Cause[]",
+                "name": "",
+                "type": "address[]"
+            }
+        ],
+        "payable": false,
+        "stateMutability": "view",
+        "type": "function"
+    },
+    {
         "constant": false,
         "inputs": [
             {
@@ -73,21 +89,6 @@ const abi = [
         "outputs": [],
         "payable": false,
         "stateMutability": "nonpayable",
-        "type": "function"
-    },
-    {
-        "constant": true,
-        "inputs": [],
-        "name": "getAllCauses",
-        "outputs": [
-            {
-                "internalType": "contract Cause[]",
-                "name": "",
-                "type": "address[]"
-            }
-        ],
-        "payable": false,
-        "stateMutability": "view",
         "type": "function"
     }
 ];
