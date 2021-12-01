@@ -1,5 +1,6 @@
 /* eslint-disable */
-import web3 from '../web3';
+// import web3 from '../web3';
+import {default as web3} from '../web3'
 
 const address = '0x515548292aA24004cB8962622a8F7E77ed075491';
 const abi = [

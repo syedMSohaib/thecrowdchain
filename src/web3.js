@@ -18,5 +18,5 @@ if (window.ethereum) {
 
 }
 
-export default web3;
+export default window.web3;
 

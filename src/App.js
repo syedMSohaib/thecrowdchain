@@ -1,5 +1,5 @@
 import React, {Component} from 'react';
-import web3 from './web3'
+import {default as web3} from './web3'
 import TheCrowdChainInstance from "./contracts/TheCrowdChainInstance";
 import TheCauseInstance from "./contracts/TheCauseInstance";
 import BlockUi from 'react-block-ui';
@@ -35,6 +35,7 @@ class App extends Component {
     checkIfMetaMaskConnected = () => {
         if(!window.ethereum.selectedAddress){
             window.ethereum.enable();
+            console.log(web3.currentProvider.publicConfigStore);
             web3.currentProvider.publicConfigStore.on('update', this.metaMaskcallback);
             return;
         }else{
